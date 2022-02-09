@@ -1,0 +1,101 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/contacto.css">
+        <title>Maquetación con html5 + css3</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>utn</h1>
+                </a>
+            </div>
+        </header>
+        <nav class="navbar">
+            <ul class="menu">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../pages/noticias.html">Noticias</a>
+                </li>
+                <li>
+                    <a href="../pages/mas-noticias.html">Mas noticias</a>
+                </li>
+                <li>
+                    <a href="../pages/contacto.html">Contacto</a>
+                </li>
+            </ul>    
+        </nav>
+    <main id="mainContent">
+        <section id="portada">
+            <div class="cont-contacto">
+                <h2>Contactenos</h2>
+                <br>
+                <form method="post" id="contacto">
+                    <div>
+                        <label for="">Nombre: </label>
+                        <input type="text" name="nombre" placeholder="ej: Juan" required id="" >
+                    </div>
+                    <div>
+                        <label for="">Email: </label>
+                        <input type="email" name="email" placeholder="ej: juan.perez@empresa.com" required>
+                    </div>
+                    <div>
+                        <label>Teléfono: </label>
+                        <input type="tel" name="Telefono" placeholder="ej: 41234567" required>
+                    </div>
+                    <div>
+                        <label>Provincia: </label>
+                        <select name="provincia">
+                            <option disabled>Seleccione su provincia</option>
+                            <option value="caba">Capital Federal</option>
+                            <option value="mdz">Mendoza</option>
+                            <option value="cba">Córdoba</option>
+                            <option value="sfe">Santa Fé</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Comentarios: </label>
+                        <textarea name="Comentario" cols="30" rows="10" required></textarea>                        
+                    </div>
+                    <div>
+                        <label>Password: </label>
+                        <input type="password" name="password">
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox">
+                            Deseo subscribirme y recibir todo el spam que me manden
+                        </label>
+                    </div>
+                    <div>
+                        <input type="submit" value="Escribenos" class="btn-envio">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <aside class="banner">
+            <h3>Esto es un ASIDE</h3>
+            <img src="../multimedia/publi1.jpg" alt="banner1">
+            <img src="../multimedia/publi2.jpg" alt="banner2">
+            <img src="../multimedia/publi3.jpg" alt="banner3">
+        </aside>
+    </main>
+    <footer>
+        <p>
+            &copy; 2022  :: Derechos reservados ::  
+        </p>
+        <p>
+            Desarrollado por <a href="./pages/contacto.html" target="_blank">mi empresa.</a>
+        </p>
+        <p>
+            Enviame un <a href="mailto:lautaro.salazardemoya@gmail.com">correo</a>
+        </p>
+    </footer>
+</body>
+</html>
